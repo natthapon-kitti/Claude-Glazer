@@ -11,10 +11,6 @@ final class UsageMonitor: ObservableObject {
         .homeDirectoryForCurrentUser
         .appendingPathComponent(".claude/usage_status_cache.json")
 
-    var menuTitle: String {
-        "🤖 \(Int(usage.fiveHourPercent))% / \(Int(usage.weekPercent))%"
-    }
-
     func start() {
         refresh()
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] _ in

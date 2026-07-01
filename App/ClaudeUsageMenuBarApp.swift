@@ -9,7 +9,7 @@ struct ClaudeUsageMenuBarApp: App {
             MenuView(monitor: monitor)
                 .task { monitor.start() }
         } label: {
-            Text(monitor.menuTitle)
+            Image(systemName: "gauge.with.needle", variableValue: max(monitor.usage.fiveHourPercent, monitor.usage.weekPercent) / 100)
         }
         .menuBarExtraStyle(.window)
     }

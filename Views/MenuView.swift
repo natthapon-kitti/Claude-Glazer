@@ -1,7 +1,9 @@
 import SwiftUI
+import ServiceManagement
 
 struct MenuView: View {
     @ObservedObject var monitor: UsageMonitor
+    @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -14,6 +16,15 @@ struct MenuView: View {
                 LimitRow(icon: "clock.fill", label: "5-hour window", percent: monitor.usage.fiveHourPercent, resetsAt: monitor.usage.fiveHourResetsAt, resetStyle: .time)
                 LimitRow(icon: "calendar", label: "7-day window", percent: monitor.usage.weekPercent, resetsAt: monitor.usage.weekResetsAt, resetStyle: .date)
             }
+
+            Divider()
+
+            Toggle("Open at Login", isOn: $launchAtLogin)
+                .toggleStyle(.checkbox)
+                .font(.system(size: 11, weight: .medium))
+                .onChange(of: launchAtLogin) { _, enabled in
+                    try? enabled ? SMAppService.mainApp.register() : SMAppService.mainApp.unregister()
+                }
 
             Divider()
 

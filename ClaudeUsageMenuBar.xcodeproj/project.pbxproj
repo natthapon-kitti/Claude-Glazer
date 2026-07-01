@@ -11,6 +11,7 @@
 		23B107B52FF4F0D80067658C /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B107A92FF4F0830067658C /* Usage.swift */; };
 		23B107B62FF4F0D80067658C /* UsageMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B107AB2FF4F0830067658C /* UsageMonitor.swift */; };
 		23B107B72FF4F0D80067658C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B107AD2FF4F0830067658C /* MenuView.swift */; };
+		23B107B82FF4F0D80067658C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B107B92FF4F0D80067658C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		23B107A92FF4F0830067658C /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
 		23B107AB2FF4F0830067658C /* UsageMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageMonitor.swift; sourceTree = "<group>"; };
 		23B107AD2FF4F0830067658C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		23B107B92FF4F0D80067658C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ClaudeUsageMenuBar/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -82,6 +84,7 @@
 				23B107AA2FF4F0830067658C /* Models */,
 				23B107AC2FF4F0830067658C /* Services */,
 				23B107AE2FF4F0830067658C /* Views */,
+				23B107B92FF4F0D80067658C /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +239,7 @@
 		238A1F2A2FF4EB9900C2A341 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				23B107B82FF4F0D80067658C /* Assets.xcassets in Resources */,
 			);
 		};
 		238A1F372FF4EB9B00C2A341 /* Resources */ = {
@@ -407,8 +411,8 @@
 		238A1F4C2FF4EB9B00C2A341 /* Debug configuration for PBXNativeTarget "ClaudeUsageMenuBar" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -417,6 +421,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude Glazer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,7 +432,7 @@
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = project.ClaudeUsageMenuBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Claude Glazer";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -441,8 +448,8 @@
 		238A1F4D2FF4EB9B00C2A341 /* Release configuration for PBXNativeTarget "ClaudeUsageMenuBar" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -451,6 +458,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude Glazer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,7 +469,7 @@
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = project.ClaudeUsageMenuBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Claude Glazer";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
